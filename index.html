@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Fashion, Electronics, Home & More | E-commerce</title>
+    <!-- let me give fevicon icon over here for that just copy the image adderess 
+create link and paste it -->
+    <link rel="icon" href="https://vetshankar.com/wp-content/uploads/2021/05/Meesho_Logo_Full.png">
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- style for products -->
+<style>
+.products{
+    
+    display: grid;
+    /* justify-content: flex-end; */
+    grid-template-columns: repeat(4,1fr);
+    gap: 13px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+    padding: 10px;
+    width:80%;
+    
+    justify-content: space-between;
+    margin:auto;
+    /* border:2px solid red */
+}
+.products>div>img{
+    width:200px
+}
+.products>div{
+    /* width:70%; */
+    /* height:30%; */
+    text-align:center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+/* #search{
+    border: none;
+} */
+</style>
+</head>
+
+<body>
+    <div class="Main">
+    <header class="header">
+        
+          <div class="headerLeft">
+            <div class="logocontainer">
+                <img id="logo"
+                +++; src="C:/Users/SHREEYA/OneDrive/Desktop/siemens_task/siemens_task/images/logo.png"  alt=""/>
+            </div>
+            <!-- search bar -->
+            <div class="searchInputContainer">
+                <div class="searchIcon">
+                    <!-- <img src="" > -->
+                    <img src="C:/Users/SHREEYA/OneDrive/Desktop/Siemens_task/siemens_task/images/search.png" alt=""/>
+                </div>
+                <!-- i want to add cross for this i link font awesome -->
+                <form action="" id="inputForm">
+                <input 
+                 type="text" placeholder="Try Saree, Kurti or Search by Product Code" id="search"/>
+                <input type="submit" value="search" style="display: none;" ></form>
+                <div class="close">
+                    <i  class="fa-solid fa-xmark" id="closeX"></i>
+                </div>
+                <div class="searchRecent">
+                    <p style="color: #333333;">Recent Searches </p>
+                    <p>
+                        Popular Searches </p>
+                    <div class="popular">
+                        <p>saree</p>
+                        <p>shoes</p>
+                        <p>smartwatch</p>
+                        <p>kurti</p>
+                        <p>watch</p>
+                        <p>tshirt</p>
+                        <p>top for woman</p>
+                        <p>lehenga</p>
+                        <p>jacket</p>
+                    </div>
+                    </div>
+                </div>
+
+          </div>
+
+          <div class="headerRight">
+           <div class="downloadContainer">
+            <div class="mobileIcon">
+                <img src="C:/Users/SHREEYA/OneDrive/Desktop/Siemens_task/siemens_task/images/mobile.png" alt="">
+            </div>
+            <p>Download App</p>
+
+            <!-- link for download -->
+            <div class="downloadHoverBtnContainer">
+                <h3>Download From</h3>
+
+                <a href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow&pli=1" class="downloadBtn"><img src="https://images.meesho.com/images/pow/playstore-icon-big.webp" alt=""></a>
+                <a href="" class="downloadBtn"><img src="https://images.meesho.com/images/pow/appstore-icon-big.webp" alt=""></a>
+            </div>
+           </div>
+
+           <div class="becomeSupplierContainer">
+            <p>Become a Supplier</p>
+             <!-- link for download -->
+             <div class="downloadHoverBtnContainer">
+                <h3>Download From</h3>
+
+                <a href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow&pli=1" class="downloadBtn"><img src="https://images.meesho.com/images/pow/playstore-icon-big.webp" alt=""></a>
+                <a href="" class="downloadBtn"><img src="https://images.meesho.com/images/pow/appstore-icon-big.webp" alt=""></a>
+            </div>
+           </div>
+
+           <div class="profileAndCart">
+            <div class="profileContainer">
+                <div class="profileIcon">
+                    <img src="C:/Users/SHREEYA/OneDrive/Desktop/Siemens_task/siemens_task/images/user.png" alt="">
+                </div>
+                <div class="profileHover"><p>Profile</p></div>
+               
+            </div>
+               
+             
+            <div class="cartContainer">
+                <div class="cartIcon">
+                    <img src="C:/Users/SHREEYA/OneDrive/Desktop/Siemens_task/siemens_task/images/cart.png" alt="">
+                </div>
+                <p>Cart</p>
+           </div>
+
+          
+          </div>
+          </header>
+       <!-- sign up button -->
+       <div class="signUpContainer">
+        <h2>Hello User</h2>
+        <p>To access your Meesho account</p>
+        <a href="./signUp.html"><button id="signUp">Sign Up</button></a>
+        <div class="myOrder">
+            <img src="https://th.bing.com/th/id/R.074d3efef8d6978629e7bb0ea2df5af8?rik=gRprKLoj2gFqmA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_130856.png&ehk=HKoa6DkQ0C%2fQWoQLPLWvLhuJThxJ0D2QcuOC4gOMpY0%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <p>My Orders</p>
+        </div>
+    </div> 
+        
+
+    <!--navigation-->
+    <nav>
+        <ul>
+            <li>Women Ethnic
+                <div class="subMenu">
+                    <div id="womenEthic" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Women Western
+                <div class="subMenu">
+                    <div id="womenWestern" class="submenuList">
+
+                    </div>
+
+                </div>
+            </li>
+            <li>Men
+                <div class="subMenu">
+                    <div id="men" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Kids
+                <div class="subMenu">
+                    <div id="kids" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Home & Kitchen
+                <div class="subMenu">
+                    <div id="HomeAndKitchen" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Beauty & Health
+                <div class="subMenu">
+                    <div id="beautyAndHealth" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Jewellery & Accessories
+                <div class="subMenu">
+                    <div id="JewelleryAndAccessories" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Bags & Footwear
+                <div class="subMenu">
+                    <div id="BagsFootWarId" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>Electronics
+                <div class="subMenu">
+                    <div id="ElectronicsId" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+    </div>
+
+    <!-- lowest price part -->
+
+    <div class="lowestpriceContainer">
+        <div class="lowestPrice_text">
+            <h1>Lowest Prices </h1>
+            <h1>Best Quality Shopping</h1>
+            <div class="lowestPriceWhay">
+                <div class="lowestPriceItem">
+                    <div class="lowestPrice_icon">
+                        <img src="https://images.meesho.com/images/pow/freeDelivery.svg"/>
+                    </div>
+                    <p>Free Delivery</p>
+                </div>
+
+                <div class="lowestPriceItem">
+                    <div class="lowestPrice_icon">
+                        <img src="https://images.meesho.com/images/pow/cod.svg"/>
+                    </div>
+                    <p>Cash on Delivery</p>
+                </div>
+                <div class="lowestPriceItem">
+                    <div class="lowestPrice_icon">
+                        <img src="https://images.meesho.com/images/pow/easyReturns.svg"/>
+                    </div>
+                    <p>Easy Returns</p>
+                </div>
+            </div>
+
+            <button class="downloadApp_contianer">
+                <div class="downloadAppIcon">
+                    <img src="https://images.meesho.com/images/pow/playstoreSmallIcon.webp"/>
+                </div>
+                <p>Download the E-commerce App</p>
+            </button>
+
+        </div>
+        <div class="lowestPrice_image">
+            <img src="https://images.meesho.com/images/marketing/1631722939962.webp" />
+        </div>
+    </div>
+        
+
+    <!--Top Categories to choose from-->
+    <div class="topCategoriesFrom">
+        <div class="topCategoriesHeading">
+            <span class="horizontalLine"></span>
+            <h1>Top Categories to choose from</h1>
+            <span class="horizontalLine"></span>
+        </div>
+        <div class="topCategoreisImage">
+            <img src="https://images.meesho.com/images/marketing/1649760442043.webp" />
+            <img src="https://images.meesho.com/images/marketing/1649760423313.webp" />
+            <img src="https://images.meesho.com/images/marketing/1649759799809.webp"/>
+        </div>
+
+        <div class="essentialContaienr">
+            <img src="https://images.meesho.com/images/marketing/1664368165450.webp" class="essen-btn"/>
+
+            <div class="essential_item">
+                <img src="https://images.meesho.com/images/marketing/1649760808952.webp"/>
+                <img src="https://images.meesho.com/images/marketing/1664364866805.webp"/>
+            </div>
+
+            <div class="essential_item">
+                <img src="https://images.meesho.com/images/marketing/1649760703179.webp"/>
+                <img src="https://images.meesho.com/images/marketing/1664364917657.webp"/>
+            </div>
+
+            <div class="essential_item">
+                <img src="https://images.meesho.com/images/marketing/1649760786763.webp"/>
+                <img src="https://images.meesho.com/images/marketing/1664364898513.webp"/>
+            </div>
+
+        </div>
+
+        <div class="becomeReseller">
+            <h3>Become a Reseller and</h3>
+            <h1>Start your Online Business <br> with Zero Investment</h1>
+            <img src="https://images.meesho.com/images/pow/downloadBannerDesktop.webp" alt="">
+            <div class="playStore">
+                <a href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow&pli=1" class="downloadBtn"><img src="https://images.meesho.com/images/pow/playstore-icon-big.webp" alt=""></a>
+                <a href="" class="downloadBtn"><img src="https://images.meesho.com/images/pow/appstore-icon-big.webp" alt=""></a>
+            </div>
+        </div>
+
+        <div class="Register">
+            <img src="https://images.meesho.com/images/pow/supplyBannerDesktop.webp" alt="">
+            <h3>Register as a Meesho Supplier</h3>
+            <p>Sell your products to crores of customers at 0% commission</p>
+            <div class="trightImg">
+                <div><img class="frightimg" src="./images/right.svg" alt=""><p>Grow your business 10x</p></div>
+                <div><img class="frightimg"src="./images/right.svg" alt=""><p>Enjoy 100% Profit</p></div>
+                <div><img class="frightimg" src="./images/right.svg" alt=""><p>Sell all over India</p></div>
+            </div>
+            <div class="regSign">
+               <a href="./signUp.html"> <h2>Sign up <br></a>
+                <a href="./signUp.html"> now</h2></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- product part -->
+    <h1 style="margin-left: 50px; margin-top: 50px;">Products For You</h1>
+    <div class="productnav">
+        <!-- <button>Cart</button>
+        <button>Log Out</button> -->
+    </div>
+    <div class="products">
+        <!-- we append all the products inside this div -->
+    </div>
+
+</body>
+
+</html>
+<script src="./script.js" type="module"></script>
+<script>
+      // write logic here
+    // we get the product data from local storage
+    let productDB = JSON.parse(localStorage.getItem('productDB'))||[];
+    let searchForm=document.querySelector("#inputForm")
+
+   
+    
+    // we display the data
+    displayData(productDB);
+    searchForm.addEventListener("submit", (e) => {
+     e.preventDefault();
+    
+    let searchParams = searchForm.search.value;
+    // alert(searchParams)
+        // console.log(productDB) 
+    let filtered = productDB.filter((element) => {
+    //   console.log(element)
+      if (
+        element.name.toUpperCase().includes(searchParams.toUpperCase()) ===
+        true
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+     displayData(filtered);
+  });
+
+
+    // we write a function to display the data or update the DOM
+
+    function displayData(data){
+        // catch the parent element
+        let parent = document.querySelector('.products');
+
+
+        // we are just following the process, we null it.
+        // we generally use null when dealing with form and DOM problems 
+         parent.innerHTML = null;
+
+        // we run forEach loop inside the array.
+        data.forEach(function(el){
+            // we create a card(div) first
+            let card = document.createElement('div');
+            let name = document.createElement('h3');
+            let img = document.createElement('img');
+            let price = document.createElement('h2');
+            let desc = document.createElement('p');
+            let cartBtn = document.createElement('button');
+
+            // we give values
+            name.textContent = el.name;
+            img.src = el.url;
+            price.textContent ="₹ "+el.price;
+
+            desc.textContent = el.desc;
+            cartBtn.textContent = 'Add to Cart'
+
+            // give functionality to the button.
+            cartBtn.addEventListener('click',function(){
+                // we get old data first
+                // as this is an array we are using JSON.parse
+                // as this is the first time getting the data, we are also giving a default value, [];
+                let cartDB = JSON.parse(localStorage.getItem('cartProducts'))||[];
+                // we modify the data
+                // we are pushing the element along with a number to give qty. Here the default qty for any product is 1.
+                cartDB.push([el,1]);
+                // we need to set the item again
+                localStorage.setItem('cartProducts',JSON.stringify(cartDB));
+                alert('added to cart!')
+            })
+
+            // we append
+            card.append(img,name,price,desc,cartBtn);
+            parent.append(card);
+            // console.log(img)
+        })
+    }
+
+    // catch the buttons
+    let cartBtn = document.querySelector('.cartContainer');
+    cartBtn.addEventListener('click',function(){
+        window.location.assign('./cart.html');
+    })
+</script>
